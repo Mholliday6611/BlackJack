@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+
+		<title>Best Black Jack In NY JU HURRDDDDD</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    	<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="BlackJack.js"></script>
+		<style type="text/css">
+			img{
+				height: 100px
+			}
+			body{
+				background-image: url(blackjack.jpg);
+			}
+			#gameStatus{
+				color: red
+			}
+			.board{
+				margin-right: 50px;
+				display: inline
+			}
+
+		</style>
+
+	</head>
+	<body>
+		<div style="margin-top: 50px" class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<center><h1>Dealer</h1><br><p id="dealerhand"></p></center>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<center><h1 id="gameStatus"></h1></center>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<center><h1>Your Hand</h1><br><p id="playerhand"></p></center>
+					<h1 class="board">Your Cash:<span id="playermoney"></span></h1>
+					<h2 class="board">Wins:<span id="wins"></span></h2>
+					<h2 class="board">Loses:<span id="loses"></span></h2>
+
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<button id="btnstart" onclick="start()">Start</button>
+					<label>Raise Bet:</label>
+					<input id="bet" type="number">
+				</div>
+				<div class="col-md-4">
+					<button id="btnhit" disabled="true" onclick="hit()">Hit</button>
+				</div>
+				<div class="col-md-4">
+					<button id="btnstay" disabled="true" onclick="stay()">Stay</button>
+				</div>
+			</div>
+		</div>
+	
+
+	</body>
+</html>
